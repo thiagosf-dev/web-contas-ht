@@ -1,13 +1,12 @@
-import "./App.css";
-import LoginChakra from "./pages/LoginChakra/LoginBootstrap";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
     <>
       {/* <IncrementDecrement /> */}
-      {/* <Login /> */}
+      <Login />
       {/* <LoginBootstrap /> */}
-      <LoginChakra />
+      {/* <LoginChakra /> */}
     </>
   );
 }

@@ -1,36 +1,56 @@
 .login-container {
-  max-width: 300px;
+  min-width: 300px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  background: #c5c5c5;
 }
 
-h2 {
+.login-container h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
-form {
+.login-container form {
   display: flex;
   flex-direction: column;
 }
 
-input[type="text"],
+.login-container input[type="text"],
 input[type="password"] {
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 
-button {
+.login-container button {
   padding: 10px;
   background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
-button:hover {
+.login-container button:hover {
   background-color: #45a049;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: whitesmoke;
+  background-color: red;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
