@@ -6,3 +6,9 @@
   -- componentes (nome; extensão; export function com return; JSX)
   -- mostrar efeito não reativo, botão chamando função que aponta para uma const
   -- estados (useState; useEffect)
+
+`npm install --save @phosphor-icons/react`
+
+`npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion`
+
+`npm install react-icons`

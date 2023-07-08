@@ -9,4 +9,6 @@ html,
   justify-content: center;
   height: 100vh;
   box-sizing: border-box;
+  color: aliceblue;
+  font-family: 'Montserrat';
 }
