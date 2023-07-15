@@ -1,15 +1,12 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import { ListarContas } from "../pages/Contas/ListarContas";
 import { Home } from "../pages/Home/Home";
 
-const routes = [
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-  },
-];
-
-export const router = createBrowserRouter(routes);
+export const Routers = () => {
+  return (
+    <Routes >
+      <Route path={'/'} element={<Home />}></Route>
+      <Route path={'/listar/contas'} element={<ListarContas />}></Route>
+    </Routes>
+  )
+}
