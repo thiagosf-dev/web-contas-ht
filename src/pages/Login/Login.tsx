@@ -1,5 +1,4 @@
 import {
-  Button,
   Card,
   CardBody,
   Flex,
@@ -46,7 +45,7 @@ export function Login({ changeIsLogged }: LoginProps) {
       setMessage(`${response.data.message}`);
       changeIsLogged(true);
     } catch (error) {
-      const err: ErrorResponse = error as ErrorResponse;
+      const err = error as ErrorResponse;
       console.error("Ocorreu  um erro: ", err);
       setMessage(
         `Erro: ${err.response.data.message} com o código ${err.response.data.status}`
@@ -62,14 +61,14 @@ export function Login({ changeIsLogged }: LoginProps) {
     setMessage("");
   }
 
-  useEffect(()=>{
-    console.log('chamou o useEffect com array vazio...');
-  }, [])
-  
-  useEffect(()=>{
-    console.log('chamou o useEffect sem array...');
-  })
-  
+  useEffect(() => {
+    console.log("chamou o useEffect com array vazio...");
+  }, []);
+
+  useEffect(() => {
+    console.log("chamou o useEffect sem array...");
+  });
+
   // useEffect(()=>{
   //   console.log('chamou o useEffect com array vazio...');
   // }, [])
